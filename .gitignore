@@ -1,0 +1,9 @@
+.angular/
+.idea/
+.DS_STORE
+npm-debug.log
+
+coverage/
+dist/
+docs/
+node_modules/

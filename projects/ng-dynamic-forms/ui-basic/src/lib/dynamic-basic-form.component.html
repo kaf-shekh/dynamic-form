@@ -1,0 +1,9 @@
+<dynamic-basic-form-control *ngFor="let controlModel of model; trackBy: trackByFn"
+                            [group]="group"
+                            [hidden]="controlModel.hidden"
+                            [layout]="layout"
+                            [model]="controlModel"
+                            [templates]="templates"
+                            (blur)="onBlur($event)"
+                            (change)="onChange($event)"
+                            (focus)="onFocus($event)"></dynamic-basic-form-control>

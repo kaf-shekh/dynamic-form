@@ -1,0 +1,19 @@
+<ng-container [formGroup]="group">
+
+    <mat-slider #matSlider
+                [color]="model.getAdditional('color', 'accent')"
+                [id]="id"
+                [min]="model.min"
+                [max]="model.max"
+                [ngClass]="[getClass('element', 'control'), getClass('grid', 'control')]"
+                [step]="model.step"
+                [tabIndex]="model.tabIndex">
+        <input matSliderThumb #matSliderThumb
+               [formControlName]="model.id"
+               (valueChange)="onChange({source: matSliderThumb, parent: matSlider, value: matSliderThumb.value})"
+               (dragEnd)="onCustomEvent({source: matSliderThumb, parent: matSlider, value: matSliderThumb.value}, 'dragEnd')"
+               (dragStart)="onCustomEvent({source: matSliderThumb, parent: matSlider, value: matSliderThumb.value}, 'dragStart')"
+        />
+    </mat-slider>
+
+</ng-container>

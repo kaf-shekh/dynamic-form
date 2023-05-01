@@ -1,0 +1,39 @@
+<header>
+
+    <h1 class="text-center">
+
+        <span>NG Dynamic Forms Sample</span>
+
+    </h1>
+
+    <nav class="text-center">
+
+        <a routerLink="/material-sample-form">Material UI</a>
+        <a routerLink="/ngx-bootstrap-sample-form">ngx-bootstrap UI</a>
+        <a routerLink="/ng-bootstrap-sample-form">NG Bootstrap UI</a>
+        <a routerLink="/foundation-sample-form">Foundation UI</a>
+        <a routerLink="/primeng-sample-form">PrimeNG UI</a>
+        <a routerLink="/basic-sample-form">Basic UI</a>
+        <a routerLink="/lazy-loaded-form">Lazy Loaded</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h2 class="comp-h2" [ngStyle]="{'background-color': routeData.bgColor}">
+
+        <span>{{routeData.title}}</span>
+
+        <a class="float-right" title="View Source" [href]="routeData.href">
+            <img src="../assets/logo-github.png"
+                 srcset="../assets/logo-github.png 1x, ../assets/logo-github@2x.png 2x"
+                 alt="Logo GitHub"/>
+        </a>
+
+    </h2>
+
+    <router-outlet></router-outlet>
+
+</main>
