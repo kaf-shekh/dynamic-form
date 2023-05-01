@@ -3,17 +3,12 @@
   "version": "17.0.0",
   "description": "A rapid form development library for Angular",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/udos86/ng-dynamic-forms.git"
+    "type": "git"
   },
   "author": {
     "name": "Kafeel Ahmad"
   },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/udos86/ng-dynamic-forms/issues"
-  },
-  "homepage": "https://github.com/udos86/ng-dynamic-forms#readme",
   "schematics": "./schematics/collection.json",
   "scripts": {
     "ng": "ng",
